@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #EEE8AE;
+}
+
+#wrapper{
+  width: 960px;
+  margin: 20px auto;
+}
+#header{
+  background-color: orange;
+  padding: 15px;
+  border-bottom: 5px solid #6b710e solid #6b710e;
+}
+
+#header h2{
+  color: white;
+}
+
+
+#header p{
+  color: gray;
+}
+
+
+#menu{
+  padding: 0;
+  list-style-type: none;
+  width: 960px;
+  background: #4e4e4e;
+  border-bottom: 5px solid #6b710e solid orange;
+  min-height: 39px;
+  margin: 0 auto;
+}
+
+#menu li{
+  float: left;
+  border-right: 1px solid #605B5B;
+  border-left: 1px solid #2B2A2A;
+  position: relative;
+}
+
+#menu li a{
+  color: white;
+  text-decoration: none;
+  background: #4e4e4e;
+  padding: 10px 20px;
+  display: block;
+  transition: 0.3s all ease;
+}
+
+#menu li a:hover{
+  background-color: red;
+}
+
+#menu li:last-child{
+  border-right: none;
+}
+
+#menu li:first-child{
+  border-left: none;
+}
+
+#menu li ul{
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  left: -99999px;
+
+}
+
+#menu li ul li{
+  float: none;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid #605B5B;
+  border-bottom: 1px solid #2B2A2A;
+  width: 200px;
+  position: relative;
+}
+
+#menu li:hover ul{
+  left: 0;
+}
+
+
+#menu li ul li ul{
+  position: absolute;
+  top: -9999px;
+
+}
+
+
+#menu li ul li:hover ul{
+  top: 0;
+  left: 200px;
+}
+
+
+#content_wrapper{
+  background-color: #fff;
+  border-top: 5px solid #6b710e;
+  padding: 10px;
+  overflow: hidden;
+}
+
+
+#slider img{
+  vertical-align: middle;
+  width: 960px;
+  height: 400px;
+
+}
+
+#content{
+  width: 620px;
+  margin-right: 20px;
+  float: left;
+}
+
+
+#content h2{
+  color: #6b710e;
+  margin-bottom: 5px;
+}
+
+
+#content p{
+  text-align: justify;
+  padding-right: 5px;
+}
+
+#sidebar{
+  width: 300px;
+  float: left;
+}
+
+
+#sidebar ul{
+  list-style-type: circle;
+  padding-left: 25px;
+}
+
+#sidebar ul li a{
+  text-decoration: none;
+  color: #6b710e;
+  padding: 3px;
+  display: block;
+}
+
+
+#sidebar h2{
+  color: #6b710e;
+
+}
+
+#footer{
+  background-color: gray;
+  padding: 15px;
+  text-align: center;
+}
+
+
+#footer p{
+  color: white;
+}
